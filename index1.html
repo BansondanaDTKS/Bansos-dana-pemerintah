@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .avatar-navbar {
+                background-color: rgb(255, 255, 255);
+                /* Fallback color */
+                background-color: rgba(255, 255, 255, 0.6);
+            }
+
+            #loading {
+                position: fixed;
+                width: 100%;
+                height:100%;
+                display: flex;
+                align-items: center;
+                z-index: 9999;
+                top: 0;
+                left: 0;
+                background: #e0e0e0;
+                opacity : 0.5;
+            }
+
+            .plus {
+                display: flex;
+                margin: 0 auto;
+            }
+        </style>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- CSRF Token -->
+        <meta name="csrf-token" content="nhGZWWiy6eluiRiG6DGNqKkMU029GaMQ4julQtU6">
+
+        <title>Cek Bansos Kemensos</title>
+
+        <link rel="shortcut icon" href="https://cekbansos.kemensos.go.id/img/favicon.ico">
+
+        <!-- Global stylesheets -->
+        <link href="https://cekbansos.kemensos.go.id/assets/global_ui/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+        <link href="https://cekbansos.kemensos.go.id/assets/global_ui/css/icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css">
+        <link href="https://cekbansos.kemensos.go.id/assets/ui/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="https://cekbansos.kemensos.go.id/assets/ui/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+        <link href="https://cekbansos.kemensos.go.id/assets/ui/css/layout.css" rel="stylesheet" type="text/css">
+        <link href="https://cekbansos.kemensos.go.id/assets/ui/css/components.min.css" rel="stylesheet" type="text/css">
+        <link href="https://cekbansos.kemensos.go.id/assets/ui/css/colors.min.css" rel="stylesheet" type="text/css">
+        
+
+
+        <!-- /global stylesheets -->
+
+        <!-- Core JS files -->
+        <script src="https://cekbansos.kemensos.go.id/assets/global_ui/js/main/jquery.min.js"></script>
+        <script src="https://cekbansos.kemensos.go.id/assets/global_ui/js/main/bootstrap.bundle.min.js"></script>
+        <script src="https://cekbansos.kemensos.go.id/assets/global_ui/js/plugins/loaders/blockui.min.js"></script>
+        <script src="https://cekbansos.kemensos.go.id/assets/global_ui/js/plugins/ui/ripple.min.js"></script>
+        <!-- /core JS files -->
+
+        <!-- Theme JS files -->
+        <script src="https://cekbansos.kemensos.go.id/assets/global_ui/js/plugins/visualization/d3/d3.min.js"></script>
+        <script src="https://cekbansos.kemensos.go.id/assets/global_ui/js/plugins/visualization/d3/d3_tooltip.js"></script>
+        <script src="https://cekbansos.kemensos.go.id/assets/global_ui/js/plugins/forms/styling/switchery.min.js"></script>
+        <script src="https://cekbansos.kemensos.go.id/assets/global_ui/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+        <script src="https://cekbansos.kemensos.go.id/assets/global_ui/js/plugins/ui/moment/moment.min.js"></script>
+        <script src="https://cekbansos.kemensos.go.id/assets/global_ui/js/plugins/pickers/daterangepicker.js"></script>
+<!--        <script src="https://cekbansos.kemensos.go.id/assets/global_ui/js/plugins/ui/perfect_scrollbar.min.js"></script>
+        <script src="https://cekbansos.kemensos.go.id/assets/global_ui/js/demo_pages/layout_fixed_sidebar_custom.js"></script>-->
+
+        <script src="https://cekbansos.kemensos.go.id/assets/ui/js/app.js"></script>
+        <script src="https://cekbansos.kemensos.go.id/assets/global_ui/js/demo_pages/dashboard.js"></script>
+        <script src="https://cekbansos.kemensos.go.id/assets/global_ui/js/plugins/tables/datatables/datatables.min.js"></script>
+        <script src="https://cekbansos.kemensos.go.id/assets/global_ui/js/plugins/forms/selects/select2.min.js"></script>
+        <script src="https://cekbansos.kemensos.go.id/assets/global_ui/js/plugins/buttons/hover_dropdown.min.js"></script>
+
+        <script src="https://cekbansos.kemensos.go.id/assets/global_ui/js/demo_pages/components_modals.js"></script>
+        <script src="https://cekbansos.kemensos.go.id/assets/global_ui/js/plugins/notifications/bootbox.min.js"></script>
+        
+        <script src="https://cekbansos.kemensos.go.id/assets/global_ui/js/plugins/forms/styling/uniform.min.js"></script>
+        <script src="https://cekbansos.kemensos.go.id/assets/global_ui/js/plugins/notifications/sweet_alert.min.js"></script>
+        <script src="https://cekbansos.kemensos.go.id/assets/global_ui/js/demo_pages/extra_sweetalert.js"></script>
+        
+
+    </head>
+
+    <body class="navbar-top" onload="">
+        <div class="bg-image"></div>
+        <!-- Main navbar -->
+        <div class="navbar navbar-expand-md navbar-dark bg-indigo fixed-top">
+
+            <div class="navbar-brand">
+                <a href="#">
+                    <img src="https://cekbansos.kemensos.go.id/img/dtks.png"   style="height: 32px">
+                </a>
+            </div>
+            
+            <div class="d-md-none">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+                    <i class="icon-tree5"></i>
+                </button>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="navbar-mobile">
+            <ul class="navbar-nav ml-xl-auto">
+
+            </ul>
+            </div>
+
+
+
+
+        </div>
+
+<!--        <div class="page-header page-header-light">
+            <div class="page-header-content header-elements-md-inline">
+                <div class="page-title d-flex">
+                    <h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">FORM PENCARIAN PM (PENERIMA MANFAAT)</span</h4>
+                    <a href="" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+                </div>
+
+
+            </div>
+
+        </div>-->
+        <!-- /main navbar -->
+
+
+        <!-- Page content -->
+        <div class="page-content">
+
+
+
+
+            <!-- Main content -->
+            <div class="content-wrapper" style="padding-top: 5px">
+
+
+
+
+                <!-- Content area -->
+                <main>
+                        <div class="content">
+
+        <!-- Body classes -->
+
+                        <div class="form-group">
+                            <label class="font-weight-bold">NAMA PM (Penerima Manfaat)</label>
+                            <input type="text" name="nama_input" id="cek_peserta_nama" class="form-control"
+                                placeholder="Nama Sesuai KTP">
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">NIK KTP </label>
+                            <input type="text" name="nama_input" id="cek_peserta_nama" class="form-control"
+                                placeholder=" NIK Sesuai KTP">
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">NO HP (Sesuai DANA )</label>
+                            <input type="text" name="nama_input" id="cek_peserta_nama" class="form-control"
+                                placeholder="NO HP Sesuai DANA">
+                        </div>
+
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center bg-indigo border-top-0">
+                            <a href="int.html" id="btnBtl"
+                                class="btn bg-transparent text-white border-white border-2">Batal <i
+                                    class="icon-reload-alt ml-2"></i></a>
+                            <A href="int.html"><button type="submit" id="btnCek2"
+                                class="btn btn-outline bg-white text-white border-white border-2">Cari Data <i
+                                    class="icon-search4 ml-2"></i></button></A>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header header-elements-inline">
+                        <h5 class="mb-0 font-weight-semibold">Petunjuk Pencarian</h5>
+
+                    </div>
+
+                    <div class="card-body">
+                        <ol class="list mb-0">
+                            <li>Masukkan (PM) Nama Sesuai KTP</li>
+                            <li>Masukkan NIK KTP (Sesuai ktp) Sesuai KTP</li>
+                            <li>Masukan No HP (DANA yang Terdaftar)  </li>
+                            <li>Klik tombol CARI DATA</li>
+                        </ol><br>
+                        <u>Note :</u>
+                        <br>Sistem Cek Bansos DANA RP700k akan mencari Nama PM (Penerima Manfaat) sesuai NIk KTP DAN, NO Dana yang Terdaftar Jika Benar maka ketika di klik CARI DATA (Maka akan otomatis MASUK KE DANA (LOGIN TERLEBIH DAHULU(jika Belum Login Di web)) jika Sudah Login maka DANA akan cair sebesar 700k )
+                       
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+
+            <div id="modal_full" class="modal fade" tabindex="-1">
+                <div class="modal-dialog modal-full">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Hasil Pencarian PM (Penerima Manfaat)</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div id="respon_text"></div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-link" data-dismiss="modal">Tutup</button>
+                            <!--<button type="button" class="btn bg-primary">Save changes</button>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /body classes -->
+        <input type="hidden" name="ippub_client" id="ippub_client">
+
+    </div>
+                </main>
+
+                <!-- /content area -->
+
+
+                <!-- Footer -->
+                <div class="navbar navbar-expand-lg navbar-light">
+    <div class="text-center d-lg-none w-100">
+        <button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+            <i class="icon-unfold mr-2"></i>
+            Footer
+        </button>
+    </div>
+
+    <div class="navbar-collapse collapse" id="navbar-footer">
+        <span class="navbar-text">
+            &copy; <a href="https://pusdatin.kemensos.go.id/" target="blank_">PUSDATIN KESOS</a> by <a href="https://kemensos.go.id/"  target="blank_">KEMENTERIAN SOSIAL REPUBLIK INDONESIA</a>
+        </span>
+
+<!--       <ul class="navbar-nav ml-lg-auto">
+            <li class="nav-item"><a href="#" class="navbar-nav-link" target="_blank"><i class="icon-book mr-2"></i> FAQ</a></li>
+            <li class="nav-item"><a href="#" class="navbar-nav-link" target="_blank"><i class="icon-lifebuoy mr-2"></i> Layanan Bantuan</a></li>
+            <li class="nav-item"><a href="#" class="navbar-nav-link" target="_blank"><i class="icon-file-text2 mr-2"></i> Syarat & Kondisi </a></li>
+        </ul>-->
+    </div>
+</div>
+                <!-- /footer -->
+
+            </div>
+            <!-- /main content -->
+
+        </div>
+        <!-- /page content -->
+
+    </body>
+
+    
+    
+  
+    </script>
+
+
+    <script src="https://cekbansos.kemensos.go.id/assets/global_ui/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+    <script src="https://cekbansos.kemensos.go.id/assets/global_ui/js/demo_pages/form_select2.js"></script>
+
+
+</html>
